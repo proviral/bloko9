@@ -1,7 +1,6 @@
 import time
 import usb_hid
 from adafruit_hid.keyboard import Keyboard
-from adafruit_hid.keycode import Keycode
 from Board import Board
 
 board = Board()
