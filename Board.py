@@ -13,53 +13,38 @@ class Board:
     __pin8 = board.GP17
     __pin9 = board.GP14
 
-    __btn1 = digitalio.DigitalInOut(__pin1)
-    __btn1.direction = digitalio.Direction.INPUT
-    __btn1.pull = digitalio.Pull.DOWN
+    top_left = digitalio.DigitalInOut(__pin1)
+    top_left.direction = digitalio.Direction.INPUT
+    top_left.pull = digitalio.Pull.DOWN
 
-    __btn2 = digitalio.DigitalInOut(__pin2)
-    __btn2.direction = digitalio.Direction.INPUT
-    __btn2.pull = digitalio.Pull.DOWN
+    top = digitalio.DigitalInOut(__pin2)
+    top.direction = digitalio.Direction.INPUT
+    top.pull = digitalio.Pull.DOWN
 
-    __btn3 = digitalio.DigitalInOut(__pin3)
-    __btn3.direction = digitalio.Direction.INPUT
-    __btn3.pull = digitalio.Pull.DOWN
+    top_right = digitalio.DigitalInOut(__pin3)
+    top_right.direction = digitalio.Direction.INPUT
+    top_right.pull = digitalio.Pull.DOWN
 
-    __btn4 = digitalio.DigitalInOut(__pin4)
-    __btn4.direction = digitalio.Direction.INPUT
-    __btn4.pull = digitalio.Pull.DOWN
+    left = digitalio.DigitalInOut(__pin4)
+    left.direction = digitalio.Direction.INPUT
+    left.pull = digitalio.Pull.DOWN
 
-    __btn5 = digitalio.DigitalInOut(__pin5)
-    __btn5.direction = digitalio.Direction.INPUT
-    __btn5.pull = digitalio.Pull.DOWN
+    center = digitalio.DigitalInOut(__pin5)
+    center.direction = digitalio.Direction.INPUT
+    center.pull = digitalio.Pull.DOWN
 
-    __btn6 = digitalio.DigitalInOut(__pin6)
-    __btn6.direction = digitalio.Direction.INPUT
-    __btn6.pull = digitalio.Pull.DOWN
+    right = digitalio.DigitalInOut(__pin6)
+    right.direction = digitalio.Direction.INPUT
+    right.pull = digitalio.Pull.DOWN
 
-    __btn7 = digitalio.DigitalInOut(__pin7)
-    __btn7.direction = digitalio.Direction.INPUT
-    __btn7.pull = digitalio.Pull.DOWN
+    bottom_left = digitalio.DigitalInOut(__pin7)
+    bottom_left.direction = digitalio.Direction.INPUT
+    bottom_left.pull = digitalio.Pull.DOWN
 
-    __btn8 = digitalio.DigitalInOut(__pin8)
-    __btn8.direction = digitalio.Direction.INPUT
-    __btn8.pull = digitalio.Pull.DOWN
+    bottom = digitalio.DigitalInOut(__pin8)
+    bottom.direction = digitalio.Direction.INPUT
+    bottom.pull = digitalio.Pull.DOWN
 
-    __btn9 = digitalio.DigitalInOut(__pin9)
-    __btn9.direction = digitalio.Direction.INPUT
-    __btn9.pull = digitalio.Pull.DOWN
-
-    sleep_time = 0.05
-    key_press_timeout = 0.07
-
-    keys = [
-        { "keyCode": Keycode.ONE, "btn": __btn1 },
-        { "keyCode": Keycode.TWO, "btn": __btn2 },
-        { "keyCode": Keycode.THREE, "btn": __btn3 },
-        { "keyCode": Keycode.FOUR, "btn": __btn4 },
-        { "keyCode": Keycode.FIVE, "btn": __btn5 },
-        { "keyCode": Keycode.SIX, "btn": __btn6 },
-        { "keyCode": Keycode.SEVEN, "btn": __btn7 },
-        { "keyCode": Keycode.EIGHT, "btn": __btn8 },
-        { "keyCode": Keycode.NINE, "btn": __btn9 }
-    ]
+    bottom_right = digitalio.DigitalInOut(__pin9)
+    bottom_right.direction = digitalio.Direction.INPUT
+    bottom_right.pull = digitalio.Pull.DOWN
